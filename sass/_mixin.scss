@@ -1,0 +1,43 @@
+@mixin nclearfix {
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin sprite($url){
+  background: url($url) no-repeat;
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+@mixin arrow($width: 20px, $height: 20px, $direction: down, $color: rgba(#130D0B,.8)){
+
+width: 0;
+height: 0;
+
+// Right
+@if $direction == right{
+    border-top: $height/2 solid transparent;
+    border-bottom: $height/2 solid transparent;
+    border-left: $width solid $color;}
+
+// Left
+@if $direction == left{
+    border-top: $height/2 solid transparent;
+    border-bottom: $height/2 solid transparent;
+    border-right: $width solid $color;}
+
+// Up
+@if $direction == up{
+    border-left: $width/2 solid transparent;
+    border-right: $width/2 solid transparent ;
+    border-bottom: $height solid $color;}
+
+// Down
+@if $direction == down{
+    border-left: $width solid transparent;
+    border-right: $width solid transparent ;
+    border-top: $height solid $color;}
+}

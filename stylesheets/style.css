@@ -1,0 +1,915 @@
+/*
+  made by fabianrios at fabianrios.co for GreenCode
+  .................................................
+  *. Variables
+  *. Commoners
+  -------------------------------------------------
+  1. HOME
+  2. PERSONAL BANNER
+  3. SOBRE GIFTCODE
+  3. MARCAS FAVORITAS
+  4. COMPRAR
+  5. BONOS
+ 
+*/
+/**. Variables*/
+/*/*. Variables*
+
+
+/**. Commoners*/
+/* line 77, ../sass/style.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 83, ../sass/style.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 88, ../sass/style.scss */
+.labeled {
+  background: #474747;
+  color: #fff;
+  padding: 4px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 22px;
+}
+
+/* line 96, ../sass/style.scss */
+.small {
+  font-size: 10px;
+}
+
+/* line 100, ../sass/style.scss */
+.no-border {
+  border: 0px;
+}
+
+/* line 104, ../sass/style.scss */
+.centered {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 110, ../sass/style.scss */
+.save {
+  display: block;
+  margin: 20px auto;
+  width: 10%;
+  height: 47px;
+  font-weight: normal;
+  line-height: 2.1;
+}
+
+/* line 119, ../sass/style.scss */
+.padding-50 {
+  padding: 50px 0;
+}
+
+/* line 122, ../sass/style.scss */
+.padding-top-20 {
+  padding: 20px 0;
+}
+
+/* line 126, ../sass/style.scss */
+p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+/* line 129, ../sass/style.scss */
+p.big {
+  font-size: 110%;
+}
+
+/* line 134, ../sass/style.scss */
+.times {
+  font-family: 'Times';
+}
+
+/* line 138, ../sass/style.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 141, ../sass/style.scss */
+.normal {
+  font-weight: 400;
+}
+
+/* line 144, ../sass/style.scss */
+.book {
+  font-weight: 300;
+}
+
+/* line 147, ../sass/style.scss */
+.sbold {
+  font-weight: 600;
+}
+
+/* line 150, ../sass/style.scss */
+.sbold {
+  font-weight: 800;
+}
+
+/* line 154, ../sass/style.scss */
+.whitetxt {
+  color: #ffffff;
+}
+
+/* line 158, ../sass/style.scss */
+.greentxt {
+  color: #559c43;
+}
+
+/* line 162, ../sass/style.scss */
+.highlight {
+  color: #d4e61d;
+}
+
+/* line 166, ../sass/style.scss */
+.block {
+  display: block;
+}
+
+/* line 169, ../sass/style.scss */
+.inline {
+  display: inline;
+}
+
+/* line 173, ../sass/style.scss */
+label {
+  color: #6a6b69;
+  font-size: 16px;
+}
+
+/* line 178, ../sass/style.scss */
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+  background-color: #eeeeee;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-color: #b8b8b8;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+/*/*. Commoners*/
+/*/HOME*/
+/* line 190, ../sass/style.scss */
+header {
+  background-color: white;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFD2D2D2');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI0NiUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMmQyZDIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(46%, #ffffff), color-stop(100%, #d2d2d2));
+  background-image: -webkit-linear-gradient(top, #ffffff 46%, #d2d2d2 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 46%, #d2d2d2 100%);
+  background-image: -o-linear-gradient(top, #ffffff 46%, #d2d2d2 100%);
+  background-image: linear-gradient(top, #ffffff 46%, #d2d2d2 100%);
+  border-bottom: 1px solid white;
+}
+/* line 198, ../sass/style.scss */
+header ul {
+  position: relative;
+  top: 55px;
+}
+/* line 4, ../sass/style.scss */
+header ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 202, ../sass/style.scss */
+header ul li {
+  float: left;
+  margin: 0 16px;
+}
+/* line 206, ../sass/style.scss */
+header ul li.divider a {
+  border-left: 1px dotted #2d781b;
+  padding-left: 25px;
+}
+/* line 211, ../sass/style.scss */
+header ul li:last-child {
+  float: right;
+  margin: 0;
+}
+/* line 215, ../sass/style.scss */
+header ul li a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* line 224, ../sass/style.scss */
+.banner {
+  background: url(../assets/banner.jpg);
+  height: 584px;
+  width: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* line 230, ../sass/style.scss */
+.banner .forbanner {
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+  top: 240px;
+}
+
+/* line 238, ../sass/style.scss */
+button, .button {
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 10px 10px 45px;
+}
+/* line 241, ../sass/style.scss */
+button span.border, .button span.border {
+  border-left: 1px solid rgba(50, 50, 50, 0.3);
+  height: 43px;
+  width: 2px;
+  position: relative;
+  padding: 7px 20px;
+}
+/* line 248, ../sass/style.scss */
+button.pre, .button.pre {
+  padding: 6px  10px;
+}
+/* line 251, ../sass/style.scss */
+button.gray, .button.gray {
+  background: #454545;
+  border: 1px solid #333333;
+}
+
+/* line 257, ../sass/style.scss */
+.greenbanner {
+  background-color: #559c43;
+  height: 121px;
+}
+/* line 260, ../sass/style.scss */
+.greenbanner a {
+  margin: 40px 30px;
+}
+
+/* line 265, ../sass/style.scss */
+.footer {
+  height: 273px;
+  padding: 50px;
+  background-color: #1D1916;
+}
+/* line 269, ../sass/style.scss */
+.footer img.logo-footer {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+/* line 274, ../sass/style.scss */
+.footer .copy {
+  color: #312e2b;
+}
+/* line 279, ../sass/style.scss */
+.footer ul.footer-menu li a {
+  color: #ffffff;
+  font-size: 12px;
+}
+/* line 282, ../sass/style.scss */
+.footer ul.footer-menu li a:hover {
+  color: #b3b3b3;
+}
+/* line 290, ../sass/style.scss */
+.footer ul.terms {
+  width: 70%;
+  margin: 0 auto;
+}
+/* line 294, ../sass/style.scss */
+.footer ul.terms li a {
+  color: #767371;
+  font-size: 12px;
+}
+/* line 297, ../sass/style.scss */
+.footer ul.terms li a:hover {
+  color: #9f9d9b;
+}
+
+/* line 305, ../sass/style.scss */
+.gifty {
+  background: url(../assets/gift.png) 0 -3px;
+  height: 36px;
+  width: 45px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* line 316, ../sass/style.scss */
+.facebook {
+  background: url(../assets/face.png) 12px 4px no-repeat;
+  height: 36px;
+  width: 45px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*/1.HOME*/
+/*2.PERSONAL BANNER*/
+/* line 331, ../sass/style.scss */
+.personal-banner {
+  margin-bottom: 60px;
+  background: url(../assets/Slider.png);
+  height: 180px;
+  width: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* line 338, ../sass/style.scss */
+.personal-banner h1 {
+  font-weight: normal;
+  margin-top: 0px;
+  text-align: center;
+}
+/* line 344, ../sass/style.scss */
+.personal-banner a.personal {
+  font-size: 24px;
+  font-style: italic;
+  font-family: 'Times';
+}
+
+/* line 352, ../sass/style.scss */
+.profile-pic {
+  text-align: center;
+  top: 21px;
+  position: relative;
+}
+/* line 4, ../sass/style.scss */
+.profile-pic:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 358, ../sass/style.scss */
+.profile-pic a img {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  height: 140px;
+  width: 140px;
+}
+
+/* line 367, ../sass/style.scss */
+.favorite-mark h3 {
+  margin-right: 20px;
+}
+/* line 371, ../sass/style.scss */
+.favorite-mark a.pre {
+  position: relative;
+  top: -5px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 380, ../sass/style.scss */
+.share-block {
+  background: #f7f7f7;
+  height: 195px;
+}
+/* line 383, ../sass/style.scss */
+.share-block h6 {
+  color: #6a6b69;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 390, ../sass/style.scss */
+.share-block ul.social-strip {
+  width: 30%;
+  position: relative;
+  top: 20px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 396, ../sass/style.scss */
+.share-block ul.social-strip li {
+  width: 33%;
+  margin: 0 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  width: 90px;
+  height: 80px;
+  background: #e9e9e9;
+  -webkit-box-shadow: inset 1px 1px 2px #b4b4b4;
+  -moz-box-shadow: inset 1px 1px 2px #b4b4b4;
+  box-shadow: inset 1px 1px 2px #b4b4b4;
+}
+/* line 405, ../sass/style.scss */
+.share-block ul.social-strip li:hover, .share-block ul.social-strip li.active {
+  background: #9d9d9d;
+  -webkit-box-shadow: inset 1px 1px 2px #686868;
+  -moz-box-shadow: inset 1px 1px 2px #686868;
+  box-shadow: inset 1px 1px 2px #686868;
+}
+/* line 411, ../sass/style.scss */
+.share-block ul.social-strip li a {
+  text-indent: -99999px;
+  display: inline-block;
+  position: relative;
+  top: 7px;
+}
+/* line 416, ../sass/style.scss */
+.share-block ul.social-strip li a.t {
+  background-image: url(../assets/Twitter.png);
+  width: 57px;
+  height: 64px;
+}
+/* line 421, ../sass/style.scss */
+.share-block ul.social-strip li a.f {
+  background: url(../assets/Facebook.png);
+  width: 59px;
+  height: 64px;
+}
+/* line 426, ../sass/style.scss */
+.share-block ul.social-strip li a.gp {
+  background: url(../assets/G.png);
+  width: 63px;
+  height: 64px;
+}
+
+/*/2.PERSONAL BANNER*/
+/*3. SOBRE GIFTCODE */
+/* line 439, ../sass/style.scss */
+ul.giftmenu {
+  position: relative;
+  top: 110px;
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+}
+/* line 446, ../sass/style.scss */
+ul.giftmenu li a {
+  color: #ffffff;
+  font-style: italic;
+  font-weight: 200;
+  font-family: Times;
+  font-size: 22px;
+}
+/* line 452, ../sass/style.scss */
+ul.giftmenu li a span.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgba(19, 13, 11, 0);
+  position: relative;
+  top: 31px;
+}
+/* line 459, ../sass/style.scss */
+ul.giftmenu li a:hover span.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgba(19, 13, 11, 0.8);
+  position: relative;
+  top: 31px;
+}
+
+/*/3. SOBRE GIFTCODE */
+/*4. MARCAS FAVORITAS */
+/* line 473, ../sass/style.scss */
+.search-box {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 30px 0 0 0;
+  margin-bottom: 30px;
+}
+/* line 477, ../sass/style.scss */
+.search-box span {
+  line-height: 1.8;
+  color: #2b2c2a;
+}
+
+/* line 484, ../sass/style.scss */
+.themarks {
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+/* line 4, ../sass/style.scss */
+.themarks:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 491, ../sass/style.scss */
+.themarks li a {
+  background: url(../assets/Rejilla.png);
+  border: 1px solid #e1e1e1;
+  float: left;
+  width: 16.666%;
+  box-sizing: border-box;
+  height: 214px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #9e9d9d;
+  line-height: 1.2;
+  padding-top: 155px;
+}
+/* line 504, ../sass/style.scss */
+.themarks li a:hover {
+  background-color: #494646;
+  color: #ffffff;
+}
+/* line 508, ../sass/style.scss */
+.themarks li a.active {
+  background-color: #494646;
+  color: #ffffff;
+  border: 0;
+}
+/* line 513, ../sass/style.scss */
+.themarks li a.cloath {
+  background-position: -167px 0;
+}
+/* line 516, ../sass/style.scss */
+.themarks li a.music {
+  background-position: -330px 0;
+}
+/* line 519, ../sass/style.scss */
+.themarks li a.books {
+  background-position: -485px 0;
+}
+/* line 522, ../sass/style.scss */
+.themarks li a.movies {
+  background-position: -655px 0;
+}
+/* line 525, ../sass/style.scss */
+.themarks li a.drinks {
+  background-position: -817px 0;
+}
+/* line 528, ../sass/style.scss */
+.themarks li a.tech {
+  background-position: 0 -214px;
+}
+/* line 531, ../sass/style.scss */
+.themarks li a.personalcare {
+  background-position: -167px -214px;
+}
+/* line 534, ../sass/style.scss */
+.themarks li a.accesories {
+  background-position: -330px -214px;
+}
+/* line 537, ../sass/style.scss */
+.themarks li a.sports {
+  background-position: -485px -214px;
+}
+/* line 540, ../sass/style.scss */
+.themarks li a.departaments {
+  background-position: -655px -214px;
+}
+/* line 543, ../sass/style.scss */
+.themarks li a.babies {
+  background-position: -817px -214px;
+}
+
+/* line 550, ../sass/style.scss */
+.close_button {
+  float: right;
+  right: 20px;
+  position: relative;
+  background: url(../assets/Boton_cerrar.png);
+  height: 32px;
+  width: 32px;
+}
+
+/* line 559, ../sass/style.scss */
+.brands {
+  width: 100%;
+  background: #494646;
+  color: #b0b0b0;
+  padding: 20px 0 0 30px;
+}
+/* line 4, ../sass/style.scss */
+.brands:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 565, ../sass/style.scss */
+.brands.shopping {
+  padding: 30px 0 0 0;
+}
+/* line 569, ../sass/style.scss */
+.brands ul.col3 {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+}
+/* line 572, ../sass/style.scss */
+.brands ul li {
+  font-size: 14px;
+  font-weight: 200;
+}
+/* line 575, ../sass/style.scss */
+.brands ul li input[type="text"] {
+  width: 85%;
+  margin-top: 10px;
+}
+/* line 579, ../sass/style.scss */
+.brands ul li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/*/4. MARCAS FAVORITAS */
+/*5. BONOS */
+/* line 589, ../sass/style.scss */
+ul.brands-circle {
+  margin-top: 30px;
+}
+/* line 4, ../sass/style.scss */
+ul.brands-circle:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 595, ../sass/style.scss */
+ul.brands-circle.friends li.active:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #494646;
+  position: relative;
+  top: 35px;
+  float: left;
+  margin-left: 130px;
+}
+/* line 607, ../sass/style.scss */
+ul.brands-circle.friends li.active img {
+  -webkit-box-shadow: rgba(50, 50, 50, 0.2) 0px 0px 20px 10px;
+  -moz-box-shadow: rgba(50, 50, 50, 0.2) 0px 0px 20px 10px;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 0px 20px 10px;
+}
+/* line 613, ../sass/style.scss */
+ul.brands-circle li {
+  float: left;
+  width: 31%;
+  margin: 10px;
+}
+/* line 618, ../sass/style.scss */
+ul.brands-circle li.active:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #494646;
+  position: relative;
+  top: 18px;
+}
+/* line 628, ../sass/style.scss */
+ul.brands-circle li.active img {
+  -webkit-box-shadow: rgba(50, 50, 50, 0.2) 0px 0px 20px 10px;
+  -moz-box-shadow: rgba(50, 50, 50, 0.2) 0px 0px 20px 10px;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 0px 20px 10px;
+}
+/* line 632, ../sass/style.scss */
+ul.brands-circle li img {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  border: 1px solid #e1e1e1;
+}
+/* line 637, ../sass/style.scss */
+ul.brands-circle li:hover img {
+  -webkit-box-shadow: rgba(50, 50, 50, 0.2) 0px 0px 20px 10px;
+  -moz-box-shadow: rgba(50, 50, 50, 0.2) 0px 0px 20px 10px;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 0px 20px 10px;
+  -webkit-transition-property: rotate;
+  -moz-transition-property: rotate;
+  -o-transition-property: rotate;
+  transition-property: rotate;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* line 648, ../sass/style.scss */
+.legal {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 98, iconos-perfil/*.png */
+.iconos-perfil-sprite, .action-buttons ul li a, .action-buttons ul li a:hover, .action-buttons ul li a.settings, .action-buttons ul li a.gift {
+  background: url('/assets/iconos-perfil-see8aef2305.png') no-repeat;
+}
+
+/* line 656, ../sass/style.scss */
+.action-buttons {
+  position: absolute;
+  bottom: 28px;
+  right: 0;
+}
+/* line 4, ../sass/style.scss */
+.action-buttons:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 662, ../sass/style.scss */
+.action-buttons ul li {
+  float: left;
+  margin: 5px;
+}
+/* line 665, ../sass/style.scss */
+.action-buttons ul li a {
+  background-position: 6px -554px;
+  -webkit-box-shadow: rgba(50, 50, 50, 0.2) 0px 5px 10px;
+  -moz-box-shadow: rgba(50, 50, 50, 0.2) 0px 5px 10px;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 5px 10px;
+  background-color: #494646;
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  position: relative;
+}
+/* line 43, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.action-buttons ul li a:hover, .action-buttons ul li a.mail_hover, .action-buttons ul li a.mail-hover {
+  background-position: 6px -589px;
+}
+/* line 676, ../sass/style.scss */
+.action-buttons ul li a span {
+  position: absolute;
+  top: -15px;
+  background: #000;
+  color: #74df7c;
+  padding: 1px 10px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  display: inline-block;
+}
+/* line 685, ../sass/style.scss */
+.action-buttons ul li a:hover {
+  -webkit-box-shadow: rgba(50, 50, 50, 0.4) 0px 5px 10px;
+  -moz-box-shadow: rgba(50, 50, 50, 0.4) 0px 5px 10px;
+  box-shadow: rgba(50, 50, 50, 0.4) 0px 5px 10px;
+  background-position: 6px -589px;
+  background-color: #494646;
+}
+/* line 690, ../sass/style.scss */
+.action-buttons ul li a.settings {
+  background-position: 6px -519px;
+  background-color: #494646;
+}
+/* line 43, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.action-buttons ul li a.settings:hover, .action-buttons ul li a.settings.settings_hover, .action-buttons ul li a.settings.settings-hover {
+  background-position: 6px -484px;
+}
+/* line 694, ../sass/style.scss */
+.action-buttons ul li a.gift {
+  background-position: 6px -414px;
+  background-color: #494646;
+}
+/* line 43, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.action-buttons ul li a.gift:hover, .action-buttons ul li a.gift.bono_hover, .action-buttons ul li a.gift.bono-hover {
+  background-position: 6px -449px;
+}
+
+/* line 703, ../sass/style.scss */
+.shop {
+  padding: 20px;
+}
+/* line 705, ../sass/style.scss */
+.shop h5 {
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+/* line 709, ../sass/style.scss */
+.shop label {
+  font-size: 14px;
+  color: #c5c5c5;
+}
+/* line 714, ../sass/style.scss */
+.shop .large-5 label {
+  margin-bottom: 10px;
+}
+
+/* line 720, ../sass/style.scss */
+.goto-buttons {
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+/* line 724, ../sass/style.scss */
+.goto-buttons .button {
+  padding: 10px;
+}
+/* line 727, ../sass/style.scss */
+.goto-buttons input.button.continue {
+  position: relative;
+}
+/* line 729, ../sass/style.scss */
+.goto-buttons input.button.continue:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid red;
+  position: absolute;
+  display: block;
+  top: 10px;
+}
+
+/*/ 5. BONOS */
+/* line 745, ../sass/style.scss */
+.sub-menu {
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0;
+  width: 440px;
+}
+/* line 750, ../sass/style.scss */
+.sub-menu li {
+  border-right: 1px dotted #2f761d;
+  text-align: center;
+  padding-right: 23px;
+  height: 23px;
+  line-height: 20px;
+}
+
+/* line 760, ../sass/style.scss */
+.sub-banner {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 767, ../sass/style.scss */
+.sub-banner img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* line 778, ../sass/style.scss */
+form.custom .custom.dropdown .selector {
+  background: #2d781b;
+  height: 2.125em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 782, ../sass/style.scss */
+form.custom .custom.dropdown .selector:after {
+  border-color: #f8f8f8 transparent transparent transparent;
+}
