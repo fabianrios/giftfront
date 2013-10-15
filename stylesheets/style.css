@@ -604,7 +604,7 @@ ul.giftmenu li a:hover span.triangle {
   width: 100%;
   background: #494646;
   color: #b0b0b0;
-  padding: 20px 0 0 30px;
+  padding: 20px 30px;
 }
 /* line 4, ../sass/style.scss */
 .brands:after {
@@ -990,4 +990,63 @@ form.custom .custom.dropdown .selector {
 /* line 835, ../sass/style.scss */
 form.custom .custom.dropdown .selector:after {
   border-color: #f8f8f8 transparent transparent transparent;
+}
+
+/* line 843, ../sass/style.scss */
+.bono {
+  background: #CAE400;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  height: 270px;
+  margin-bottom: 20px;
+}
+/* line 848, ../sass/style.scss */
+.bono.white {
+  padding: 10px 30px;
+  background: #fff;
+}
+/* line 851, ../sass/style.scss */
+.bono.white img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 857, ../sass/style.scss */
+.bono.white span {
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+}
+
+/* line 865, ../sass/style.scss */
+.the-close {
+  width: 100%;
+  height: 32px;
+  margin-bottom: 15px;
+}
+
+/* line 871, ../sass/style.scss */
+.brand-ico {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+/* line 878, ../sass/style.scss */
+.whos {
+  margin-top: 100px;
+}
+/* line 880, ../sass/style.scss */
+.whos h4 {
+  font-weight: normal;
+  margin: 3px 0;
 }

@@ -38,7 +38,13 @@
 	  <div class="row">
 	    <div class="large-6 columns large-centered padding-top-20">
 	      <div class="centered">
-	        <h1 class="whitetxt text-center inline times"><em>Hola Fabián, </em></h1><a href="" class="personal">Salir</a>
+	        <h1 class="whitetxt text-center inline times"><em>Hola Fabián, </em></h1>
+			<form action="/users/sign_out" class="button_to ng-pristine ng-valid" method="post">
+				<div>
+					<input name="_method" type="hidden" value="delete">
+					<input class="personal right" type="submit" value="Salir"><input name="authenticity_token"	type="hidden" value="KmLqLySYXb9aNgwIpfBbfpfrhjQegejquh8HuyDiygQ=">
+				</div>
+			</form>
 	      </div>
 	      <div class="profile-pic">
 	        <a href="#"><img src="http://placehold.it/140x140" alt="" /></a>
