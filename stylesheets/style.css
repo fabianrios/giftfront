@@ -994,7 +994,10 @@ form.custom .custom.dropdown .selector:after {
 
 /* line 843, ../sass/style.scss */
 .bono {
-  background: #CAE400;
+  background: url("../assets/bono-back.jpg") no-repeat scroll center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -1003,33 +1006,33 @@ form.custom .custom.dropdown .selector:after {
   height: 270px;
   margin-bottom: 20px;
 }
-/* line 848, ../sass/style.scss */
+/* line 851, ../sass/style.scss */
 .bono.white {
   padding: 10px 30px;
   background: #fff;
 }
-/* line 851, ../sass/style.scss */
+/* line 854, ../sass/style.scss */
 .bono.white img {
   display: block;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 857, ../sass/style.scss */
+/* line 860, ../sass/style.scss */
 .bono.white span {
   display: block;
   margin: 5px auto;
   text-align: center;
 }
 
-/* line 865, ../sass/style.scss */
+/* line 868, ../sass/style.scss */
 .the-close {
   width: 100%;
   height: 32px;
   margin-bottom: 15px;
 }
 
-/* line 871, ../sass/style.scss */
+/* line 874, ../sass/style.scss */
 .brand-ico {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -1041,12 +1044,35 @@ form.custom .custom.dropdown .selector:after {
   left: 30px;
 }
 
-/* line 878, ../sass/style.scss */
+/* line 881, ../sass/style.scss */
 .whos {
-  margin-top: 100px;
+  margin-top: 60px;
 }
-/* line 880, ../sass/style.scss */
+/* line 883, ../sass/style.scss */
 .whos h4 {
   font-weight: normal;
+  margin: 1px 0;
+  font-size: 22px;
+}
+/* line 888, ../sass/style.scss */
+.whos h2 {
   margin: 3px 0;
+}
+
+/* line 893, ../sass/style.scss */
+.giftnote {
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  height: 60px;
+}
+/* line 897, ../sass/style.scss */
+.giftnote p {
+  font-family: Times;
+  line-height: 60px;
+  text-align: center;
+  color: #2b2c2a;
 }

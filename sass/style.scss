@@ -841,7 +841,10 @@ form.custom .custom.dropdown .selector{
 //UPDATE BONO
 
 .bono{
-	background: #CAE400;
+	background: url('../assets/bono-back.jpg') no-repeat scroll center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
 	@include border-radius(10px);
 	height: 270px;
 	margin-bottom: 20px;
@@ -876,9 +879,26 @@ form.custom .custom.dropdown .selector{
 }
 
 .whos{
-	margin-top: 100px;
+	margin-top: 60px;
 	h4{
 		font-weight: normal;
+		margin: 1px 0;
+		font-size: 22px;
+	}
+	h2{
 		margin: 3px 0;
+	}
+}
+
+.giftnote{
+	background: #fff;
+	@include border-radius(10px);
+	height: 60px;
+	p{
+		font-family: Times;
+		line-height: 60px;
+		text-align: center;
+		color: #2b2c2a;
+		
 	}
 }
