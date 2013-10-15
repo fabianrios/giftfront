@@ -922,15 +922,19 @@ ul.brands-circle li:hover img {
   top: 10px;
   right: 10px;
 }
-/* line 777, ../sass/style.scss */
+/* line 778, ../sass/style.scss */
+.goto-buttons.more-space a {
+  margin: 0 15px;
+}
+/* line 782, ../sass/style.scss */
 .goto-buttons .button {
   padding: 10px;
 }
-/* line 780, ../sass/style.scss */
+/* line 785, ../sass/style.scss */
 .goto-buttons input.button.continue {
   position: relative;
 }
-/* line 782, ../sass/style.scss */
+/* line 787, ../sass/style.scss */
 .goto-buttons input.button.continue:after {
   content: '';
   width: 0;
@@ -944,14 +948,14 @@ ul.brands-circle li:hover img {
 }
 
 /*/ 5. BONOS */
-/* line 798, ../sass/style.scss */
+/* line 803, ../sass/style.scss */
 .sub-menu {
   font-size: 20px;
   margin: 0 auto;
   padding: 0;
   width: 440px;
 }
-/* line 803, ../sass/style.scss */
+/* line 808, ../sass/style.scss */
 .sub-menu li {
   border-right: 1px dotted #2f761d;
   text-align: center;
@@ -960,7 +964,7 @@ ul.brands-circle li:hover img {
   line-height: 20px;
 }
 
-/* line 813, ../sass/style.scss */
+/* line 818, ../sass/style.scss */
 .sub-banner {
   margin-bottom: 30px;
   padding-bottom: 20px;
@@ -969,7 +973,7 @@ ul.brands-circle li:hover img {
   margin: 0 auto;
   text-align: center;
 }
-/* line 820, ../sass/style.scss */
+/* line 825, ../sass/style.scss */
 .sub-banner img {
   display: block;
   margin: 0 auto;
@@ -977,7 +981,7 @@ ul.brands-circle li:hover img {
   padding-bottom: 10px;
 }
 
-/* line 831, ../sass/style.scss */
+/* line 836, ../sass/style.scss */
 form.custom .custom.dropdown .selector {
   background: #2d781b;
   height: 2.125em;
@@ -987,14 +991,14 @@ form.custom .custom.dropdown .selector {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 835, ../sass/style.scss */
+/* line 840, ../sass/style.scss */
 form.custom .custom.dropdown .selector:after {
   border-color: #f8f8f8 transparent transparent transparent;
 }
 
-/* line 843, ../sass/style.scss */
+/* line 848, ../sass/style.scss */
 .bono {
-  background: url("../assets/bono-back.jpg") no-repeat scroll center center;
+  background: url("../assets/bono-back.jpg") no-repeat scroll top center;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
@@ -1003,36 +1007,58 @@ form.custom .custom.dropdown .selector:after {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  height: 270px;
+  min-height: 270px;
   margin-bottom: 20px;
 }
-/* line 851, ../sass/style.scss */
+/* line 856, ../sass/style.scss */
+.bono.bigone {
+  margin-top: 30px;
+  min-height: 370px;
+}
+/* line 859, ../sass/style.scss */
+.bono.bigone .whos {
+  margin-top: 80px;
+}
+/* line 862, ../sass/style.scss */
+.bono.bigone .giftnote {
+  margin-top: 20px;
+  height: 80px;
+}
+/* line 865, ../sass/style.scss */
+.bono.bigone .giftnote p {
+  line-height: 80px;
+  font-size: 22px;
+}
+/* line 871, ../sass/style.scss */
 .bono.white {
+  background: white url("../assets/bono-white.jpg") no-repeat scroll top center;
+  -webkit-background-size: cover;
+  background-size: cover;
   padding: 10px 30px;
-  background: #fff;
 }
-/* line 854, ../sass/style.scss */
-.bono.white img {
+/* line 877, ../sass/style.scss */
+.bono.white img.qr {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
-  margin-bottom: 10px;
+  width: 110px;
+  height: 110px;
 }
-/* line 860, ../sass/style.scss */
+/* line 885, ../sass/style.scss */
 .bono.white span {
   display: block;
   margin: 5px auto;
   text-align: center;
 }
 
-/* line 868, ../sass/style.scss */
+/* line 893, ../sass/style.scss */
 .the-close {
   width: 100%;
   height: 32px;
   margin-bottom: 15px;
 }
 
-/* line 874, ../sass/style.scss */
+/* line 899, ../sass/style.scss */
 .brand-ico {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -1043,23 +1069,34 @@ form.custom .custom.dropdown .selector:after {
   top: 30px;
   left: 30px;
 }
+/* line 904, ../sass/style.scss */
+.brand-ico.smallish {
+  width: 120px;
+  height: 120px;
+}
 
-/* line 881, ../sass/style.scss */
+/* line 910, ../sass/style.scss */
 .whos {
   margin-top: 60px;
 }
-/* line 883, ../sass/style.scss */
+/* line 912, ../sass/style.scss */
 .whos h4 {
   font-weight: normal;
   margin: 1px 0;
   font-size: 22px;
 }
-/* line 888, ../sass/style.scss */
+/* line 917, ../sass/style.scss */
 .whos h2 {
   margin: 3px 0;
+  font-weight: normal;
+}
+/* line 921, ../sass/style.scss */
+.whos h6 {
+  font-weight: 200;
+  margin: 0;
 }
 
-/* line 893, ../sass/style.scss */
+/* line 927, ../sass/style.scss */
 .giftnote {
   background: #fff;
   -webkit-border-radius: 10px;
@@ -1069,10 +1106,61 @@ form.custom .custom.dropdown .selector:after {
   border-radius: 10px;
   height: 60px;
 }
-/* line 897, ../sass/style.scss */
+/* line 931, ../sass/style.scss */
 .giftnote p {
   font-family: Times;
   line-height: 60px;
   text-align: center;
   color: #2b2c2a;
+}
+
+/* line 940, ../sass/style.scss */
+.gray-warning {
+  background: #535353;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+}
+/* line 945, ../sass/style.scss */
+.gray-warning p {
+  color: #fff;
+  text-align: center;
+  font-family: Times;
+  line-height: 80px;
+  font-size: 21px;
+  font-style: italic;
+}
+
+/* line 955, ../sass/style.scss */
+.reveal-modal {
+  padding: 0;
+  border: 0;
+}
+/* line 958, ../sass/style.scss */
+.reveal-modal .close-reveal-modal {
+  color: #65DC69;
+  background: #3E3E3E;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  top: -3em;
+  right: -3em;
+}
+/* line 970, ../sass/style.scss */
+.reveal-modal .close-reveal-modal span {
+  font-size: 16px;
+  position: absolute;
+  left: -55px;
+  top: 3px;
+  font-family: "Times New Roman", Times;
+  font-style: italic;
+  font-weight: 200;
 }

@@ -774,6 +774,11 @@ ul.brands-circle{
 	position: relative;
 	top: 10px;
 	right: 10px;
+	&.more-space{
+		a{
+			margin:0 15px;
+		}
+	}
 	.button{
 		padding: 10px;
 	}
@@ -841,21 +846,41 @@ form.custom .custom.dropdown .selector{
 //UPDATE BONO
 
 .bono{
-	background: url('../assets/bono-back.jpg') no-repeat scroll center center;
+	background: url('../assets/bono-back.jpg') no-repeat scroll top center;
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 100%;
 	@include border-radius(10px);
-	height: 270px;
+	min-height: 270px;
 	margin-bottom: 20px;
+	&.bigone{
+		margin-top: 30px;
+		min-height: 370px;
+		.whos{
+			margin-top: 80px;
+		}
+		.giftnote{
+			margin-top: 20px;
+			height: 80px;
+			p{
+				line-height: 80px;
+				font-size: 22px;
+			}
+		}
+	}
 	&.white{
+		background: #fff url('../assets/bono-white.jpg') no-repeat scroll top center;
+		-webkit-background-size: cover;
+		background-size: cover;
 		padding: 10px 30px;
-		background: #fff;
 		img{
-			display: block;
-			margin: 0 auto;
-			text-align: center;
-			margin-bottom: 10px;
+			&.qr{
+				display: block;
+				margin: 20px auto;
+				text-align: center;
+				width: 110px;
+				height: 110px;
+			}
 		}
 		span{
 			display: block;
@@ -876,6 +901,10 @@ form.custom .custom.dropdown .selector{
 	position: relative;
 	top: 30px;
 	left: 30px;
+	&.smallish{
+		width: 120px;
+		height: 120px;
+	}
 }
 
 .whos{
@@ -887,6 +916,11 @@ form.custom .custom.dropdown .selector{
 	}
 	h2{
 		margin: 3px 0;
+		font-weight: normal;
+	}
+	h6{
+		font-weight: 200;
+		margin: 0;
 	}
 }
 
@@ -902,3 +936,47 @@ form.custom .custom.dropdown .selector{
 		
 	}
 }
+
+.gray-warning{
+	background: #535353;
+	width: 100%;
+	height: 80px;
+	margin: 0 auto;
+	p{
+		color: #fff;
+		text-align: center;
+		font-family: Times;
+		line-height: 80px;
+		font-size: 21px;
+		font-style: italic;
+	}
+}
+
+.reveal-modal{
+	padding: 0;
+	border: 0;
+	.close-reveal-modal{
+		color: #65DC69;
+		background: #3E3E3E;
+		@include border-radius(100%);
+		width: 35px;
+		height: 35px;
+		line-height: 30px;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 200;
+		top: -3em;
+		right: -3em;
+		span{
+			font-size: 16px;
+			position: absolute;
+			left: -55px;
+			top: 3px;
+			font-family: "Times New Roman", Times;
+			font-style: italic;
+			font-weight: 200;
+		}
+	}
+}
+
+
